@@ -1,0 +1,15 @@
+body{
+    animation: transitionIn 2s ease-in-out;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity:0;
+        tranform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

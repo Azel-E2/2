@@ -1,0 +1,211 @@
+body{
+    background-color: rgb(15, 15, 15);
+}
+#section2,#section3,#section4{
+    margin-bottom: 25px;
+}
+h2{
+    font-size: 52px;
+}
+h3{
+    font-size: 32px;
+}
+.navbar-nav{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(224, 224, 224);
+}
+.nav-brand{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration-line: none;
+    color: rgb(224, 224, 224);
+}
+.nav-brand-logo{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.nav-brand:hover{
+    opacity: 0.5;
+    width: 25%;
+}
+#logo-brand:hover{
+    opacity: 0.5;
+}
+.nav-link, .nav-link.disabled{
+    color: rgb(224, 224, 224);
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navbar-nav .nav-link.active{
+    color: rgb(145, 128, 225);
+}
+.nav-link:hover{
+    color: rgb(161, 36, 36);
+}
+
+/* QUOTE */
+.main-wrapper-project{
+    position: relative;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    font-family: "Modern Age";
+}
+@font-face {
+    font-family: "Futuristic Mecha";
+    src: url(Asset/Font/FuturiscticMechaV1-Regular.ttf) format('truetype');
+
+    font-family: "Modern Age";
+    src: url(Asset/Font/ModernAge.ttf) format('truetype');
+}
+
+/* CARD */
+.header-card{
+    font-family: "Modern Age";
+    font-size: 100px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transition: 0.5s ease-in-out;
+}
+#header-card-5, #header-card-4{
+    font-size: 80px;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    background-color: rgba(92, 92, 92, 0.02);
+}
+#card-4, #card-5{
+    margin-top: 25px;
+}
+.card-base{
+    box-shadow: 10px 5px 10px rgba(224, 224, 224,25%);
+    height: 700px;
+    width: 390px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-desc{
+    font-family: "Modern Age";
+    color: rgb(161, 36, 36);
+    font-size: 30px;
+}
+.card-navigator{
+    text-decoration-line: none;
+}
+/* CARD */
+#card-image-thumbnail-1{
+    height:500px;
+    width: auto;
+}
+/* CARD HOVER */
+.card-base:hover{
+    box-shadow: 10px 5px 10px rgba(161, 36, 36,50%);
+    transition-delay: 0.2;
+    cursor: pointer;
+}
+.overlay-desc{
+    position: absolute;
+    text-align: end;
+    width: 55%;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-base:hover .overlay-desc{
+    cursor: pointer;
+    color: rgb(224, 224, 224);
+    margin-left: 25px;
+    opacity: 1;
+}
+.card-base:hover .header-card{
+    margin-left: -150px;
+}
+
+.isiP{
+    color: rgb(224, 224, 224);
+    margin: auto;
+    text-align: justify;
+    align-items: center;
+}
+*{
+    font-family: 'montserrat';
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.isipara{
+    text-align: justify;
+}
+.container-footer{
+    display: flex;
+    flex-direction:row;
+}
+.list-footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-middle{
+    display: flex;
+    flex-direction: row;
+}
+.footer-link{
+    text-decoration-line: none;
+    color: inherit;
+}
+#tagline{
+    color: rgb(145, 128, 225);
+}
+.footer-link:hover{
+    color: rgb(161, 36, 36);
+}
+#footer-header,#footer-header3{
+    text-transform: uppercase;
+    color: rgb(224, 224, 224);
+}
+.section-padding{
+    padding: 50px;
+}
+
+@media (max-width: 720px) {
+    .card{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .container-footer{
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+/* Reveal animation */
+.reveal{
+    /* position: relative; */
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform:translate(0px);
+    opacity: 1;
+}

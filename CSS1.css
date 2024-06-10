@@ -1,0 +1,322 @@
+body{
+    background-color: rgb(15, 15, 15);
+}
+#section2,#section3,#section4, #section5{
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+h2{
+    font-size: 52px;
+}
+h3{
+    font-size: 32px;
+}
+.navbar-nav{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(224, 224, 224);
+}
+.nav-brand{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration-line: none;
+    color: rgb(224, 224, 224);
+}
+.nav-brand-logo{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.nav-brand:hover{
+    opacity: 0.5;
+    width: 25%;
+}
+#logo-brand:hover{
+    opacity: 0.5;
+}
+.nav-link, .nav-link.disabled{
+    color: rgb(224, 224, 224);
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navbar-nav .nav-link.active{
+    color: rgb(145, 128, 225);
+}
+.nav-link:hover{
+    color: rgb(161, 36, 36);
+}
+
+/* QUOTE */
+.main-wrapper-quote{
+    position: relative;
+    height: 750px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    font-family: "Modern Age";
+}
+@font-face {
+    font-family: "Futuristic Mecha";
+    src: url(Asset/Font/FuturiscticMechaV1-Regular.ttf) format('truetype');
+
+    font-family: "Modern Age";
+    src: url(Asset/Font/Modern\ Age.ttf) format('truetype');
+}
+#Quote, #Coming-soon{
+    font-family: "Modern Age";
+    text-align: center;
+    font-size: 85px;
+}
+.wrapper-writter-quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+#writter-quote{
+    margin-right: 10px;
+    border-radius: 50%;
+}
+/* QUOTE */
+
+/* Biodata */
+.BIODATA{
+    position: relative;
+    height: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Judul-biodata{
+    font-family: "Modern Age";
+    text-align: center;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+#Biodata-nama{
+    color: rgb(145,128,225);
+    /* color: rgb(137, 206, 240); */
+}
+#Biodata-deskripsi{
+    color: rgb(224, 224, 224);
+    text-align: justify;
+}
+.Biodata-sosmed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#contactme-button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(145, 128, 225);
+    margin-right: 20px;
+}
+#contactme-button:hover{
+    background-color: rgb(161, 36, 36);
+    color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+.icon-medsos{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.icon-medsos:hover{
+    border-radius: 25px;
+    background-color: rgb(161, 36, 36);
+}
+
+/* Biodata */
+/* MY GEAR */
+#Judul-mygear{
+    font-family: "Modern Age";
+    text-align: center;
+    font-size: 85px;
+}
+.wrapper-gear{
+    position: relative;
+    height: 900px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centered-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Gear-list{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+/* CARD HOVER GEAR ANIMATION */
+.card-title{
+    font-family: "Modern Age";
+}
+.card{
+    width: 18rem;
+    background-color: rgba(92, 92, 92, 0.02);
+    height: 266px;
+}
+.container-hover-1 .card{
+    transition: 0.3s ease-in-out;
+}
+.Overlay-card-img{
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    height: 320px;
+}
+.card-body{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3 ease-in-out;
+}
+.card:hover .card-body{
+    cursor: pointer;
+    color: rgb(161, 36, 36);
+    margin-top: -30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+.card:hover .Overlay-card-img{
+    cursor: pointer;
+    color: rgb(224, 224, 224);
+    margin-top: -25px;
+    opacity: 1;
+}
+.card:hover .card-img-top{
+    cursor: pointer;
+    opacity: 20%;
+}
+.Gear-list.bawah{
+    padding-left: 120px;
+}
+
+/* MY GEAR */
+
+#Setsizeimg{
+    width: 1920px;
+    height: auto;
+}
+.carousel-caption{
+    color: rgb(224, 224, 224);
+}
+.isiP{
+    color: rgb(224, 224, 224);
+    margin: auto;
+    text-align: justify;
+    align-items: center;
+}
+*{
+    font-family: 'montserrat';
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.isipara{
+    text-align: justify;
+}
+.container-footer{
+    display: flex;
+    flex-direction:row;
+}
+.list-footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-middle{
+    display: flex;
+    flex-direction: row;
+}
+.footer-link{
+    text-decoration-line: none;
+    color: inherit;
+}
+#tagline{
+    color: rgb(145, 128, 225);
+}
+.footer-link:hover{
+    color: rgb(161, 36, 36);
+}
+#footer-header,#footer-header3{
+    text-transform: uppercase;
+    color: rgb(224, 224, 224);
+}
+.section-padding{
+    padding: 50px;
+}
+
+@media (max-width: 720px) {
+    .card{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .flexrow{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-footer{
+        display: flex;
+        flex-direction:column;
+    }
+    .wrapper-gear{
+        position: relative;
+        height: 1700px;
+        width: 90%;
+        margin-top: inherit;
+
+    }
+    .BIODATA{
+        position: relative;
+        height: 1000px;
+        width: 90%;
+    }
+    .Gear-list, .Gear-list.bawah{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: inherit;
+    }
+    #section3{
+        height: 1000px;
+    }
+    #section4{
+        height: 1800px;
+    }
+}
+
+/* Reveal animation */
+.reveal{
+    /* position: relative; */
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform:translate(0px);
+    opacity: 1;
+}
